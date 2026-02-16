@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reset de senha</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="card">
+    <div class="brand"><span class="dot"></span><span>Reset de senha</span></div>
+    <p class="hint">Todo link de redefinição precisa de um token<b>, acesse a documentação do sistema</b> para saber melhor.</p>
+
+    <label>Token</label>
+    <input class="field" id="token" readonly>
+
+    <label>Nova senha</label>
+    <input class="field" id="newPass" type="password" placeholder="mín 8, letra+numero">
+
+    <button class="btn" id="btnReset">Trocar senha</button>
+
+    <div id="msg" class="msg"></div>
+
+    <div class="mini" style="margin-top:12px;">
+      <a class="smalllink" href="/login.html">Voltar pro login</a>
+    </div>
+  </div>
+
+  <script src="js/reset.js"></script>
+</body>
+</html>

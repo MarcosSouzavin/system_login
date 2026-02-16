@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>System Login</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <div class="brand"><span class="dot"></span><span>System Login</span></div>
+      <h1 class="title">aba de login para o seu sistema/site bro...</h1>
+      <p class="subtitle">
+        Cadastro, login, sessão por cookie, rota protegida e reset de senha.
+      </p>
+
+      <div class="pillrow">
+        <span class="pill">@mvinik14</span>
+        <span class="pill">(19) 98261-9876</span>
+      </br>
+        <span class="pill">bcrypt</span>
+        <span class="pill">Reset token</span>
+        <span class="pill">Rate limit</span>
+      </div>
+
+      <div class="footer">
+        <div>Rodando em <b>http://localhost:3000</b></div>
+        <div class="hint">Senha forte: 8+ com letra e número.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="tabs">
+        <button class="tab active" id="tabLogin">Entrar</button>
+        <button class="tab" id="tabRegister">Criar conta</button>
+        <button class="tab" id="tabForgot">Esqueci</button>
+      </div>
+
+      <div id="sectionLogin" class="section active">
+        <div class="grid">
+          <div>
+            <label>Email</label>
+            <input class="field" id="lEmail" placeholder="voce@exemplo.com" autocomplete="email">
+          </div>
+          <div>
+            <label>Senha</label>
+            <input class="field" id="lPass" type="password" placeholder="••••••••" autocomplete="current-password">
+          </div>
+          <button class="btn" id="btnLogin">Entrar</button>
+          <button class="btn secondary" id="btnGoDash">Ir pro Dashboard</button>
+          <div class="hint">Se te mandar pro login, é porque você não tá autenticado (certo).</div>
+        </div>
+      </div>
+
+      <div id="sectionRegister" class="section">
+        <div class="grid">
+          <div class="row">
+            <div>
+              <label>Email</label>
+              <input class="field" id="rEmail" placeholder="voce@exemplo.com" autocomplete="email">
+            </div>
+            <div>
+              <label>Senha</label>
+              <input class="field" id="rPass" type="password" placeholder="mín 8, letra+numero" autocomplete="new-password">
+            </div>
+          </div>
+          <button class="btn" id="btnRegister">Criar conta</button>
+          <div class="hint">Se der “Email já cadastrado”, vai na aba Entrar.</div>
+        </div>
+      </div>
+
+      <div id="sectionForgot" class="section">
+        <div class="grid">
+          <div>
+            <label>Email da conta</label>
+            <input class="field" id="fEmail" placeholder="voce@exemplo.com" autocomplete="email">
+          </div>
+          <button class="btn" id="btnForgot">Gerar link de reset</button>
+          <div class="hint">Por segurança, o sistema não revela se o email existe.</div>
+        </div>
+      </div>
+
+      <div id="msg" class="msg"></div>
+
+      <div class="mini">
+        <a class="smalllink" href="/reset.html" target="_blank">Abrir reset.html</a>
+        <a class="smalllink" href="/dashboard.html" target="_blank">Abrir dashboard.html</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>

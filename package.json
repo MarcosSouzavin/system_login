@@ -1,0 +1,32 @@
+{
+  "name": "system_login",
+  "version": "1.0.0",
+  "description": "Um sistema de codigo aberto de login funcional, detalhando a conexão ao banco de dados.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcosSouzavin/system_login.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MarcosSouzavin/system_login/issues"
+  },
+  "homepage": "https://github.com/MarcosSouzavin/system_login#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "better-sqlite3": "^12.6.2",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "nanoid": "^5.1.6"
+  }
+}

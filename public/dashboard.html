@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="card">
+    <div class="brand"><span class="dot"></span><span>Dashboard</span></div>
+    <p class="hint">Dados vêm da rota protegida <b>/me</b>. Se não tiver cookie, volta pro login.</p>
+
+    <div class="grid">
+      <button class="btn secondary" id="btnRefresh">Atualizar</button>
+      <button class="btn" id="btnLogout">Logout</button>
+    </div>
+
+    <div style="height:12px;"></div>
+    <pre id="out">{}</pre>
+
+    <div class="mini" style="margin-top:12px;">
+      <a class="smalllink" href="/login.html">Voltar pro login</a>
+    </div>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
