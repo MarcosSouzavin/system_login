@@ -46,3 +46,27 @@ public/
 .env
 package.json
 database.sqlite (gerado automaticamente)
+
+
+instale as dependencias;
+
+npm install
+
+para rodar; 
+
+npm run dev
+
+Abra no navegador:
+
+http://localhost:3000/login.html
+
+## Requisitos
+- Node.js (LTS recomendado)
+
+Verificar instalação:
+```bash
+node -v
+npm -v
+
+
+
